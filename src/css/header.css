@@ -1,0 +1,129 @@
+/* --- HEADER STYLES - Mobile First --- */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 120px; /* ajusta tamaño */
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-brand {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-main);
+}
+
+.nav__toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.nav__toggle svg {
+  width: 2rem;
+  height: 2rem;
+}
+.nav__toggle .icon-close {
+  display: none;
+}
+.nav__toggle.active .icon-menu {
+  display: none;
+}
+.nav__toggle.active .icon-close {
+  display: block;
+}
+
+/* Menú Mobile */
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: var(--bg-dark);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.nav.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.nav__link:hover {
+  color: var(--primary);
+}
+
+/* --- MEDIA QUERY DESKTOP --- */
+@media (min-width: 1024px) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav__link {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,81 @@
+/* Hero section container setup */
+.hero {
+  position: relative;
+  background-image: url("/public/img/imgHero.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem 1rem;
+}
+
+/* Dark overlay added via ::before */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 0;
+}
+
+/* Hero content section, centered text */
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+}
+
+/* Title styling in the hero */
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Button styling with hover effect */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--primary);
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 90vh;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+}

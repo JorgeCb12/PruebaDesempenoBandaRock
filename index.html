@@ -4,6 +4,232 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banda de Rock (Eventos y Promoción)</title>
+    <link
+      rel="shortcut icon"
+      href="public/icons/logo.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/hero.css" />
+    <link rel="stylesheet" href="src/css/events.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/multimedia.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="logo">
+          <img
+            src="public/icons/nirvana-640-logo.png"
+            alt="Nirvana logo"
+            class="logo-img"
+          />
+        </a>
+
+        <button class="nav__toggle" aria-label="Abrir menú">
+          <svg
+            class="icon-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.4"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <svg
+            class="icon-close"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.4"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <nav class="nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#events">EVENTS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#media">MEDIA</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">ROCK THE NIGHT - UPCOMING TOUR</h1>
+
+          <a href="#" class="btn">VIEW ALL EVENTS</a>
+        </div>
+      </section>
+
+      <section class="events" id="events">
+        <div class="container">
+          <h2 class="events__title">Upcoming Events</h2>
+
+          <table class="events__table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Venue</th>
+                <th>Tickets</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15 MAY</td>
+                <td>Madrid</td>
+                <td>Sala El Sol</td>
+                <td><a href="#" class="btn tickets">Buy Now</a></td>
+              </tr>
+              <tr>
+                <td>20 MAY</td>
+                <td>Barcelona</td>
+                <td>Razzmatazz</td>
+                <td><a href="#" class="btn tickets">Buy Now</a></td>
+              </tr>
+              <tr>
+                <td>22 MAY</td>
+                <td>Sevilla</td>
+                <td>Sala Custom</td>
+                <td><a href="#" class="btn tickets">Buy Now</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="about__title">About the Band</h2>
+
+        <div class="about__content">
+          <article class="about__img">
+            <div class="img-container">
+              <img src="public/img/img-2.jpg" alt="Band photo" />
+            </div>
+            <div class="about__text-movil">
+              <span>10Y MAY</span>
+              <p>Very popular rock band</p>
+            </div>
+          </article>
+
+          <article class="about__text">
+            <p class="about__text-desktop">
+              Nirvana fue una influyente banda de rock estadounidense
+              (1987-1994) formada por Kurt Cobain y Krist Novoselic, fundamental
+              en la popularización del rock alternativo y el grunge con éxitos
+              como "Smells Like Teen Spirit". Con Dave Grohl en la batería,
+              definieron el sonido de los 90, combinando punk y pop con letras
+              emotivas y densas.
+            </p>
+            <h3>Our Influences</h3>
+            <ul class="about__list">
+              <li>Classic Rock</li>
+              <li>Hard Rock</li>
+              <li>Alternative</li>
+            </ul>
+            <div class="about__text-movil">
+              <span>10Y MAY</span>
+              <p>Very popular rock band</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="multimedia" id="media">
+        <div class="container">
+          <h2 class="multimedia__title">MULTIMEDIA</h2>
+
+          <div class="multimedia__main-grid">
+            <div class="multimedia__images">
+              <img src="public/img/img-1.jpg" alt="Live Concert 1" />
+              <img src="public/img/img-2.jpg" alt="Live Concert 2" />
+              <img src="public/img/img-3.jpg" alt="Live Concert 3" />
+              <img src="public/img/img-4.jpg" alt="Live Concert 4" />
+              <img src="public/img/img-5.jpg" alt="Live Concert 5" />
+              <img src="public/img/img-6.jpg" alt="Live Concert 6" />
+              <img src="public/img/img-7.jpg" alt="Live Concert 7" />
+              <img src="public/img/img-8.jpg" alt="Live Concert 8" />
+            </div>
+
+            <!-- VIDEO (SÓLO DESKTOP) -->
+            <div class="multimedia__video">
+              <iframe src="https://www.youtube.com/embed/uH_0-p0nntk"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="footer">
+      <div class="footer__content">
+        <ul class="footer__social">
+          <li class="footer__item">
+            <a href="#">
+              <img src="public/icons/instagram.svg" alt="" />
+              Instagram
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="public/icons/Spotify.svg" alt="" />
+              Spotify
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="public/icons/youtube.svg" alt="" />
+              YouTube
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__info">
+          <span>Band Info</span>
+          <ul>
+            <li>Classic Rock</li>
+            <li>Hard Rock</li>
+            <li>Alternative</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">
+        &copy; 2023 Banda de Rock (Eventos y Promoción). Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
 </html>

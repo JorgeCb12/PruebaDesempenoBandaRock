@@ -1,0 +1,94 @@
+/* === EVENTS SECTION (MOBILE-FIRST BASE) === */
+.events {
+  padding: 4rem 1rem;
+  background-color: var(--bg-dark);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* === SECTION TITLE === */
+.events__title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-main);
+  font-size: 1.5rem;
+}
+
+/* === TABLE STRUCTURE === */
+.events__table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0.2rem 0.4rem;
+}
+
+/* === TABLE HEADER (PRIMARY STYLE) === */
+.events__table thead {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* === TABLE CELLS (BASE STYLING) === */
+.events__table th,
+.events__table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+/* === BODY CELLS (CARD-LIKE LOOK) === */
+.events__table td {
+  border-radius: 0.4rem;
+  background: #555;
+}
+
+/* === MOBILE OPTIMIZATION: HIDE LESS IMPORTANT COLUMNS === */
+.events__table th:nth-child(2),
+.events__table td:nth-child(2),
+.events__table th:nth-child(3),
+.events__table td:nth-child(3) {
+  display: none;
+}
+
+/* === ROW HOVER INTERACTIONS === */
+.events__table tbody tr {
+  transition: 0.25s ease;
+}
+
+.events__table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.events__table tbody tr:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* === HEADER INTERACTION (SUBTLE FEEDBACK) === */
+.events__table thead th {
+  transition: 0.3s ease;
+}
+
+.events__table thead th:hover {
+  background-color: var(--primary-hover);
+  cursor: default;
+  color: #000;
+}
+
+/* === DESKTOP ENHANCEMENTS (PROGRESSIVE ENHANCEMENT) === */
+@media (min-width: 1024px) {
+  /* Show hidden columns on larger screens */
+  .events__table th:nth-child(2),
+  .events__table td:nth-child(2),
+  .events__table th:nth-child(3),
+  .events__table td:nth-child(3) {
+    display: table-cell;
+  }
+
+  /* Improve spacing and readability */
+  .events__table th,
+  .events__table td {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+}
