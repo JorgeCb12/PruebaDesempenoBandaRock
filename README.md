@@ -71,7 +71,7 @@ Media queries are used to adjust:
 1. Download or clone the project repository:
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+https://github.com/JorgeCb12/PruebaDesempenoBandaRock.git
 ```
 
 2. Open the project folder.
@@ -116,42 +116,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-4. Click:
-
-```bash
-Open with Live Server
-```
-
-👉 This allows:
-
-- automatic reload on changes
-- better development workflow
-
----
-
-### Option 3 – Using Python (Local server)
-
-If you have Python installed:
-
-1. Open terminal inside the project folder
-
-2. Run:
-
-```bash
-python -m http.server
-```
-
-3. Open browser and go to:
-
-```bash
-http://localhost:8000
-```
-
----
 
 ## Key Sections
 
@@ -188,5 +152,5 @@ Make sure the project:
 
 ## Author
 
-Student Name
+Jorge Corrales
 Frontend Developer Trainee
